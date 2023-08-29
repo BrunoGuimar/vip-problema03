@@ -15,3 +15,13 @@ O último caso de teste é seguido por uma linha contendo apenas o número zero.
 
 Saída
 Para cada caso de teste de entrada, o seu programa deve imprimir N linhas, cada linha correspondendo a uma pergunta. Se a resposta à pergunta foi preenchida corretamente na folha de respostas, a linha deve conter a alternativa selecionada ('A', 'B', 'C', 'D' ou 'E'). Caso contrário, a linha deve conter o caractere '*' (asterisco).
+
+# Checklist
+
+Construir a matriz atráves dos inputs. [ X ]
+
+Armazenar a posição que estiver a 'resposta' do aluno "A", "B", "C", "D" ou "E". [ X ]
+
+Desenvolver uma forma de percorrer o array e validar se é <= 127 "preto" ou > 127 "branco". [ X ]
+
+Validar a funcionalidade do código no site. [  ]
