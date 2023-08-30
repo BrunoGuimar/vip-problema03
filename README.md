@@ -25,3 +25,21 @@ Armazenar a posição que estiver a 'resposta' do aluno "A", "B", "C", "D" ou "E
 Desenvolver uma forma de percorrer o array e validar se é <= 127 "respondido" ou > 127 "em branco". [ X ]
 
 Validar a funcionalidade do código no site. [ X ]
+
+# Instalação do projeto
+
+Siga esses passos para instalar e executar o projeto:
+
+1. Clone o repositório:
+```
+git clone git@github.com:BrunoGuimar/vip-problema03.git
+```
+2. Acesse o diretório do projeto:
+```
+cd vip-problema03
+```
+4. Execute a aplicação:
+
+```
+python main.py
+```
