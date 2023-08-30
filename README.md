@@ -36,10 +36,13 @@ git clone git@github.com:BrunoGuimar/vip-problema03.git
 ```
 2. Acesse o diretório do projeto:
 ```
-cd vip-problema03
+cd vip-problema03/scr
+```
+3. Instale pytest para realização dos testes:
+```
+pip install pytest
 ```
 4. Execute a aplicação:
-
 ```
 python main.py
 ```
