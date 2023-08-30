@@ -17,8 +17,9 @@ def validar_respostas(respostas):
 
 
 # Loop de inicialização forçada com condição para finalizar execução quando for passado 0 ao input.
-while True:
-    qtd_linhas = input()
-    if int(qtd_linhas) == 0:
-        break
-    resolver_respostas(qtd_linhas)
+if __name__ == "__main__":
+    while True:
+        qtd_linhas = input()
+        if int(qtd_linhas) == 0:
+            break
+        resolver_respostas(qtd_linhas)
