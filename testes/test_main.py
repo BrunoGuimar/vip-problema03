@@ -1,4 +1,4 @@
-from main import validar_respostas, resolver_respostas
+from src.main import validar_respostas, montar_respostas
 
 
 def test_validar_respostas():
@@ -9,13 +9,13 @@ def test_validar_respostas():
 
     # Variável para teste
     resultado = validar_respostas(teste_respostas1)
-    esperado = "C"
+    esperado = 'C'
     assert resultado == esperado
 
 
-def test_resolver_respostas(monkeypatch, captura_saida):
+def test_montar_respostas(monkeypatch, capsys):
     entrada_valores = '255 0 255 255 255'
-    esperado = "B\n"  # Saída esperada para a entrada acima
+    esperado = 'B\n'  # Saída esperada para a entrada acima
 
     def mock_input():
         return entrada_valores
@@ -23,9 +23,9 @@ def test_resolver_respostas(monkeypatch, captura_saida):
     # Realiza a substituição da função input() para o mock_input().
     monkeypatch.setattr('builtins.input', mock_input)
 
-    resolver_respostas(1)
-    # Captura a saida padrão durante a execução da função resolver_respostas().
-    resultado = captura_saida.readouterr()
+    montar_respostas(1)
+    # Captura a saida padrão durante a execução da função montar_respostas().
+    resultado = capsys.readouterr()
     assert resultado.out == esperado
 
 

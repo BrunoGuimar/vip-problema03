@@ -1,5 +1,5 @@
 # Função responsável por montar e processar as respostas dos alunos.
-def resolver_respostas(qtd_linhas):
+def montar_respostas(qtd_linhas):
     for _ in range(int(qtd_linhas)):
         linhas = input().split()
         linhas = list(map(int, linhas))
@@ -22,4 +22,4 @@ if __name__ == "__main__":
         qtd_linhas = input()
         if int(qtd_linhas) == 0:
             break
-        resolver_respostas(qtd_linhas)
+        montar_respostas(qtd_linhas)
