@@ -9,9 +9,9 @@ def resolver_respostas(qtd_linhas):
 
 # Função responsável por fazer a validação das respostas e retornar a alternativa marcada.
 def validar_respostas(respostas):
-    index_alternativa = [i for i, valor in enumerate(respostas) if valor <= 127]
-    if len(index_alternativa) == 1:
-        return chr(index_alternativa[0] + ord('A'))
+    indice_alternativa = [indice for indice, valor in enumerate(respostas) if valor <= 127]
+    if len(indice_alternativa) == 1:
+        return chr(indice_alternativa[0] + ord('A'))
     else:
         return "*"
 
